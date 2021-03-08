@@ -1,0 +1,12 @@
+.root {
+  width: 10rem;
+  background-color: lightgray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  margin: 2vh 0;
+}

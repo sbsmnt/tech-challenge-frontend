@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "miragejs",
+    "reduxjs",
+    "serializers"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "css.lint.unknownAtRules": "ignore"
+}
