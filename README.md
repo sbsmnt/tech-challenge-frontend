@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# MobieTrain's Tech Challenge for Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This exercise will challenge your React skills. You'll be given a starting point with specific technologies from our stack, which you should use to complete your tasks.
 
-## Available Scripts
+## Challenge Statement
 
-In the project directory, you can run:
+You'll work on a frontend web application for a movie gallery. This application should allow its users to view and manage movies, actors and genres. To get you started you'll find a local api developed with [miragejs](https://miragejs.com/) and some components with key implementation that you may use as an inspiration, as it is also inspired by our current practices.
 
-### `yarn start`
+### Local API Endpoints
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For the bodies of non-get requests there's an interface that will help you getting started (i.e. PayloadMovie). Feel free to extend them as you need. You can find logs of the API in your DevTools' Console.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+POST /api/movies
+GET /api/movies
+GET /api/movies/:id
+PUT /api/movies/:id
+DELETE /api/movies/:id
 
-### `yarn test`
+POST /api/actors
+GET /api/actors
+GET /api/actors/:id
+PUT /api/actors/:id
+DELETE /api/actors/:id
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+POST /api/genres
+GET /api/genres
+GET /api/genres/:id
+PUT /api/genres/:id
+DELETE /api/genres/:id
+```
 
-### `yarn build`
+### What you CAN do
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Extend any given interface.
+- Edit any given code (exceptions below).
+- Use any design system and/or component library (we won't evaluate the looks, only the hows).
+- Install any library that you find usefull to help you out (We'll, though, look at them and challenge your decisions).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What you SHOULDN'T do
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Change the API unless there's a very strong reason to do so.
+- Use a different stack from the given one (i.e. `redux-thunk` instead of the `redux-saga`).
 
-### `yarn eject`
+## Issues
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To complete this challenge, you should implement these following issues:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### MG-0001 Add actors list page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+As a user, I want to see all the actors in the system.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### MG-0002 Add movies list page
 
-## Learn More
+As a user, I want to see all the movies in the system.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### MG-0003 Add movies by genre collections to the home page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+As a user, I want to see multiple movies grouped by genre in the home page.
+
+*(Note: the UI must be a card layout like the Netflix home page)*
+
+### MG-0004 Add movie creation
+
+As a user, I want to create a new movie.
+
+*(Note: the API database is not permanent and we don't expect it to be. You must call the POST endpoint, nevertheless)*
+
+### MG-0005 Add movie list filter by actor
+
+As a user, I want to filter the movies list by actor.
+
+### MG-0006 Add movie list filtered by actor on actor click
+
+As a user, I want to see all the movies that an actor starred on when I click on one from the actors list.
