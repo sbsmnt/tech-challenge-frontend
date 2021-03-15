@@ -4,9 +4,9 @@ This exercise will challenge your React skills. You'll be given a starting point
 
 ## Challenge Statement
 
-You'll work on a frontend web application for a movie gallery (the). This application should allow its users to view and manage movies, actors and genres. To get you started you'll find a local api developed with [miragejs](https://miragejs.com/) and some components with key implementation that you may use as an inspiration, as it is also inspired by our current practices.
+You'll work on a frontend web application for a movie gallery. This application should allow its users to view and manage movies, actors and genres. To get you started you'll find a local api developed with [miragejs](https://miragejs.com/) and some components with key implementation that you may use as an inspiration, as it is also inspired by our current practices.
 
-### Out Mindset
+### Our Mindset
 
 - Be consistent and concise. 
 - Favor clear and clean code.

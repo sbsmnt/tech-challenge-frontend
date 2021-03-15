@@ -5,7 +5,7 @@ import { genresActions } from 'store/genres.slice';
 export const Home = () => {
   const dispatch = useDispatch();
   React.useEffect(() => {
-    dispatch(genresActions.getGenres());
+    dispatch(genresActions.getAll());
   }, [dispatch]);
   return (
     <div>

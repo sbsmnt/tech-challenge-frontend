@@ -13,12 +13,12 @@ const slice = createSlice({
   name: 'genres',
   initialState,
   reducers: {
-    getGenres: (state) => state,
-    getGenresSuccess: (state, action: PayloadAction<Genre[]>) => {
+    getAll: (state) => state,
+    getAllSuccess: (state, action: PayloadAction<Genre[]>) => {
       const { payload: genres } = action;
       return { ...state, genres };
     },
-    getGenresError: (state, action: PayloadAction<Error>) => state,
+    getAllError: (state, action: PayloadAction<Error>) => state,
   },
 });
 
