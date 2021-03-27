@@ -1,0 +1,27 @@
+.actorcard{
+  min-height: 250px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+
+  &:focus{
+      outline: 2px auto rgb(160, 168, 238);
+    }
+
+  .name{
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(13, 23, 117);
+
+    &:hover{
+      color: rgb(69, 81, 189);
+    }
+  }
+
+  .bio{
+    margin-top: 1rem;
+  }
+}

@@ -1,16 +1,16 @@
 import React from 'react';
 import { render, screen } from 'utils/tests';
-import { Home } from './Home';
+import { Movies } from './Movies';
 
-describe('Home', () => {
+describe('Movies', () => {
   it('should render with default props', () => {
-    render(<Home />);
+    render(<Movies />);
 
-    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText('Movies')).toBeInTheDocument();
   });
 
   it('should render loading', () => {
-    render(<Home />);
+    render(<Movies />);
 
     expect(screen.getByTestId('loading')).toBeInTheDocument();
   });
